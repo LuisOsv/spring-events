@@ -1,6 +1,6 @@
 FROM gradle:jdk11 as builder
 
-RUN /home/gradle/project
+RUN mkdir /home/gradle/project
 
 WORKDIR /home/gradle/project
 
