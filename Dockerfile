@@ -1,5 +1,7 @@
 FROM gradle:jdk11 as builder
 
+RUN /home/gradle/project
+
 WORKDIR /home/gradle/project
 
 USER root
