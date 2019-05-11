@@ -17,6 +17,6 @@ EXPOSE 8080
 
 WORKDIR /home/gradle/project
 
-COPY --from=builder /home/gradle/project/build/libs/spring-events.jar .
+COPY --from=builder /home/gradle/project/build/libs/project.jar .
 
-ENTRYPOINT java -jar spring-events.jar
+ENTRYPOINT java -jar project.jar
